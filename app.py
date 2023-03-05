@@ -41,7 +41,7 @@ def runapp():
         raw_text = st.text_area(key = 'input_text_area', label='text_area', label_visibility='hidden', height=400, placeholder='Paste the text here...')
         st.write('##')
         
-        col_left, col_right = st.columns([0.08, 1])
+        col_left, col_right = st.columns([0.09, 1])
         # Output Section
         with col_left:
             submit = st.button(label='Submit ✅')
