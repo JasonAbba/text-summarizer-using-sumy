@@ -1,8 +1,8 @@
 # TEXT SUMMARIZER
 
 #! NEED TO RUN ONLY ONCE
-# import nltk
-# nltk.download('punkt')
+import nltk
+nltk.download('punkt')
 
 # Streamlit
 import streamlit as st
@@ -13,7 +13,7 @@ from sumy.nlp.tokenizers import Tokenizer
 from sumy.summarizers.lex_rank import LexRankSummarizer
 
 # JUST TO RELOAD ENTIRE PAGE
-import pyautogui
+# import pyautogui
 
 # Load Local CSS
 def local_css(file_name):
@@ -55,7 +55,8 @@ def runapp():
             clear = st.button(label='Clear 🗑️')
         if clear:
              # Stimulate F5 key press
-             pyautogui.hotkey('F5')
+             # pyautogui.hotkey('F5')
+             st.empty()
 
     # Footer Section
     with st.container():
